@@ -1,14 +1,15 @@
 package suiteb;
 
 import org.testng.annotations.Test;
+import testbase.TestBase;
 
-public class TestBB {
+public class TestBB extends TestBase {
 
     @Test
     public void testBB() throws InterruptedException {
-        System.out.println("Starting BB");
+        log("Starting BB");
         Thread.sleep(3000);
-        System.out.println("Ending BB");
+        log("Ending BB");
     }
 
 }

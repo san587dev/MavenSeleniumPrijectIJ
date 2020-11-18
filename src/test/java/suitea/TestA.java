@@ -13,11 +13,10 @@ public class TestA extends TestBase {
 
     @Test
     public void testA() throws InterruptedException {
-        System.out.println("Starting A");
-        test.log(Status.INFO,"Starting A");
+
+        log("Starting A");
         Thread.sleep(3000);
-        System.out.println("Ending A");
-        test.log(Status.INFO,"Ending A");
+        log("Ending A");
     }
 
 }

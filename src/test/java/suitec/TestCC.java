@@ -1,13 +1,14 @@
 package suitec;
 
 import org.testng.annotations.Test;
+import testbase.TestBase;
 
-public class TestCC {
+public class TestCC extends TestBase {
 
     @Test
     public void testCC() throws InterruptedException {
-        System.out.println("Starting CC");
+        log("Starting CC");
         Thread.sleep(3000);
-        System.out.println("Ending CC");
+        log("Ending CC");
     }
 }

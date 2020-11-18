@@ -1,14 +1,15 @@
 package suitec;
 
 import org.testng.annotations.Test;
+import testbase.TestBase;
 
-public class TestC {
+public class TestC extends TestBase {
 
     @Test
     public void testC() throws InterruptedException {
-        System.out.println("Starting C");
+        log("Starting C");
         Thread.sleep(3000);
-        System.out.println("Ending C");
+        log("Ending C");
     }
 
 }

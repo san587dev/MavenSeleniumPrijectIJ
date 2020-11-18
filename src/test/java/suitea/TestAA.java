@@ -1,12 +1,13 @@
 package suitea;
 
 import org.testng.annotations.Test;
+import testbase.TestBase;
 
-public class TestAA {
+public class TestAA extends TestBase {
     @Test
     public void testAA() throws InterruptedException {
-        System.out.println("Starting AA");
+        log("Starting AA");
         Thread.sleep(3000);
-        System.out.println("Ending AA");
+        log("Ending AA");
     }
 }
